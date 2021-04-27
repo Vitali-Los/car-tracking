@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Car Tracking</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/Page icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/Page icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/Page icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/Page icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/Page icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/Page icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/Page icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/Page icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/Page icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/Page icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/Page icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/Page icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/Page icon/favicon-16x16.png">
+	<link rel="manifest" href="img/Page icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/Page icon/ms-icon-144x144.png">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/Menu/03.png" alt=""></a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a data-goto=".image-slider" href="#" class="menu__link">Головна</a></li>
+							<li><a data-goto=".content" href="#" class="menu__link">Авто</a></li>
+							<li><a data-goto=".catalog" href="#" class="menu__link">Статті</a></li>
+							<li><a data-goto=".footer" href="#" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="image-slider swiper-container">
+				<!-- Слайдер -->
+				<div class="image-slider__wrapper swiper-wrapper">
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/Slider/03.jpg" alt="Картинка">
+						</div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/Slider/04.jpg" alt="Картинка">
+						</div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/Slider/02.jpg" alt="Картинка">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+		</div>
+		<div class="content">
+			<h1 class="content__title"><p>Car Tracking</p></h1>
+			<div class="content__container">
+				<div class="content__filter one">
+					<div class="filter__banner">
+						<div class="reklama__text">
+							<div class="reklama__titl">Реклама</div>
+						</div>
+					</div>
+					<ul class="filter__list">
+							<li data-filter="2" class="filter__item">
+								<div class="filter__title subtitle">A-B</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Acura</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Aston Martin</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Audi</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Bentley</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">BMW</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Bugatti</a></li>
+									</ul>
+							</li>
+							<li data-filter="3" class="filter__item">
+								<div class="filter__title subtitle">C-D</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Cadillac</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Chevrolet</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Chrysler</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Citroen</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Dodge</a></li>
+									</ul>
+							</li>
+							<li data-filter="4" class="filter__item">
+								<div class="filter__title subtitle">F-I</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Ferrari</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Fiat</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Ford</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Honda</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Hyndai</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Infiniti</a></li>
+									</ul>
+							</li>
+							<li data-filter="5" class="filter__item">
+								<div class="filter__title subtitle">J-L</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Jaguar</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Jeep</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">KIA</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Lamborghini</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Land Rover</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Lexus</a></li>
+									</ul>
+							</li>
+							<li data-filter="6" class="filter__item">
+								<div class="filter__title subtitle">M-N</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Maserati</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Maybach</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Mazda</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Mclaren</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Mersedes Benz</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Mitsubishi</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Nissan</a></li>
+									</ul>
+							</li>
+							<li data-filter="7" class="filter__item">
+								<div class="filter__title subtitle">O-R</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Opel</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Pagani</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Peugeot</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Porsche</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Renault</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Rolls Royce</a></li>
+									</ul>
+							</li>
+							<li data-filter="2" class="filter__item">
+								<div class="filter__title subtitle">S-Z</div>
+									<ul class="subtitle__list">
+										<li class="subtitle__item"><a class="subtitle__link" href="">Skoda</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Subaru</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Tesla</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Toyota</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Volkwagen</a></li>
+										<li class="subtitle__item"><a class="subtitle__link" href="">Volvo</a></li>
+									</ul>
+							</li>
+							<div class="block">
+								<li data-filter="7" class="filter__block">
+									<p class="block__title">Ваша реклама</p>
+								</li>
+								<li data-filter="7" class="filter__block">
+									<p class="block__title">Ваша реклама</p>
+								</li>
+							</div>
+						</ul>
+						<div class="filter__banner">
+						<div class="reklama__text">
+							<div class="reklama__titl">Реклама</div>
+						</div>
+					</div>
+				</div>
+				<div class="content__catalog catalog">
+					<div class="content__active active">
+						<div class="active__column">
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Volkswagen Tiguan</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/01.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Mersedes Benz AMG</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/02.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Porsche 911 Turbo S</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/06.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Ford Explorer XLT</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/04.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Audi R8</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/05.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item item">
+								<div class="item__text">
+									<div class="item__titl">Volvo S90</div>
+									<div class="item__subtitl btn btn_y"><a href=""><span>Читати Статтю</span></a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/03.jpg" alt=""></div>
+							</div>
+							<div class="f_2 active__item reklama">
+								<div class="reklama__text">
+									<div class="reklama__titl">Реклама</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__watched watched">
+						<div class="watched__title"><p>Найпопулярніші</p></div>
+						<div class="watched__column">
+							<div class="watched__item item">
+								<div class="item__text">
+									<div class="item__titl"><a href="">Mersedes Benz</a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/08.jpg" alt=""></div>
+							</div>
+							<div class="watched__item item">
+								<div class="item__text">
+									<div class="item__titl"><a href="">BMW</a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/09.jpg" alt=""></div>
+							</div>
+							<div class="watched__item item">
+								<div class="item__text">
+									<div class="item__titl"><a href="">Audi</a></div>
+								</div>
+								<div class="item__logo" ><img src="img/Content/Logo/07.jpg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="footer__item">
+							<div class="footer__title">Contact us</div>
+							<ul class="footer__list">
+								<li class="footer__link"><a target="blank" href="https://www.instagram.com/car_tracking.official/">Instagram</a></li>
+								<li class="footer__link">e-mail: <a href="mailto:cartracking.official@gmail.com">cartracking.official@gmail.com</a>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__item">
+							<div class="footer__title">Info</div>
+							<ul class="footer__list">
+								<li class="footer__link"><a target="blank" href="">About us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/swipe.js"></script>
+	<script src="js/scrol.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/spoller.js"></script>
+</body>
+</html>
