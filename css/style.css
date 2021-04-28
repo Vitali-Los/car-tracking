@@ -1162,6 +1162,14 @@ body._touch .menu__list > li._active .menu__arrow {
     position: relative; } }
 
 .filter__banner {
+  -webkit-transform: translate(0%, 120%);
+  -ms-transform: translate(0%, 120%);
+  transform: translate(0%, 120%);
+  opacity: 0;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+  overflow: hidden;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20%;
   flex: 1 1 20%;
@@ -1171,6 +1179,11 @@ body._touch .menu__list > li._active .menu__arrow {
   box-shadow: 3px 3px 1px #4e4e4e;
   border: 2px solid #000;
   border-radius: 7px; }
+  .filter__banner._active {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1; }
   @media (max-width: 900.98px) {
     .filter__banner {
       border: 1px solid #000;
@@ -1180,12 +1193,25 @@ body._touch .menu__list > li._active .menu__arrow {
       display: none; } }
 
 .filter__block {
+  -webkit-transform: translate(0%, 120%);
+  -ms-transform: translate(0%, 120%);
+  transform: translate(0%, 120%);
+  opacity: 0;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+  overflow: hidden;
   background: #fff;
   height: 200px;
   -webkit-box-shadow: 3px 3px 1px #4e4e4e;
   box-shadow: 3px 3px 1px #4e4e4e;
   border: 2px solid #000;
   border-radius: 7px; }
+  .filter__block._active {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1; }
   .filter__block:last-child {
     margin: 20px 0 0 0; }
   @media (max-width: 1750px) {
@@ -1293,6 +1319,7 @@ body._touch .menu__list > li._active .menu__arrow {
   border: 2px solid #000; }
 
 .item {
+  overflow: hidden;
   background: url("../img/Content/Logo/11.jpg") 0 0/cover no-repeat;
   -ms-flex-line-pack: end;
   align-content: flex-end;
@@ -1306,6 +1333,32 @@ body._touch .menu__list > li._active .menu__arrow {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 47%;
   flex: 1 1 47%; }
+  .item:nth-child(odd) {
+    -webkit-transform: translate(120%, 0%);
+    -ms-transform: translate(120%, 0%);
+    transform: translate(120%, 0%);
+    opacity: 0;
+    -webkit-transition: all 2s ease 0s;
+    -o-transition: all 2s ease 0s;
+    transition: all 2s ease 0s; }
+    .item:nth-child(odd)._active {
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      opacity: 1; }
+  .item:nth-child(even) {
+    -webkit-transform: translate(-120%, 0%);
+    -ms-transform: translate(-120%, 0%);
+    transform: translate(-120%, 0%);
+    opacity: 0;
+    -webkit-transition: all 2s ease 0s;
+    -o-transition: all 2s ease 0s;
+    transition: all 2s ease 0s; }
+    .item:nth-child(even)._active {
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      opacity: 1; }
   @media (max-width: 1230px) {
     .item {
       -webkit-box-flex: 0;
@@ -1345,8 +1398,7 @@ body._touch .menu__list > li._active .menu__arrow {
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    padding: 0px 0px 0px 10px;
-    cursor: pointer; }
+    padding: 0px 0px 0px 10px; }
     @media (max-width: 1750px) {
       .item__titl {
         font-size: 14px; } }
@@ -1407,6 +1459,7 @@ body._touch .menu__list > li._active .menu__arrow {
         -webkit-box-shadow: 1px 1px 0 #7f7f7f;
         box-shadow: 1px 1px 0 #7f7f7f; }
   .item__logo {
+    min-height: 100%;
     padding: 4px;
     text-align: center;
     -webkit-box-flex: 1;
@@ -1426,6 +1479,14 @@ body._touch .menu__list > li._active .menu__arrow {
       max-height: 100%; }
 
 .reklama {
+  -webkit-transform: translate(120%, 0%);
+  -ms-transform: translate(120%, 0%);
+  transform: translate(120%, 0%);
+  opacity: 0;
+  -webkit-transition: all 2.5s ease 0s;
+  -o-transition: all 2.5s ease 0s;
+  transition: all 2.5s ease 0s;
+  overflow: hidden;
   margin: 0 26px 26px 0;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 95%;
@@ -1433,7 +1494,15 @@ body._touch .menu__list > li._active .menu__arrow {
   background: #fff;
   height: 150px;
   border: 2px solid #000; }
+  .reklama._active {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1; }
   @media (max-width: 1230px) {
+    .reklama {
+      margin: 0 26px 26px 0; } }
+  @media (max-width: 900.98px) {
     .reklama {
       margin: 0 0 26px 0; } }
   .reklama__text {
@@ -1950,8 +2019,6 @@ ol.counter {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  .ibg img {
-    display: none; }
 
 .video {
   position: relative;
